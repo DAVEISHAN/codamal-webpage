@@ -120,12 +120,23 @@ body {
   border: 1px solid #bbb;
   border-radius: 10px;
   padding: 0;
-  font-size: 0;
+  font-size: 0; /* This might be hiding your titles, consider removing or changing it */
 }
 
-.results-carousel video {
-  margin: 0;
+.results-carousel .item .image-title {
+  font-size: 1rem; /* Reset the font size for titles */
+  color: #000; /* Set title color */
+  text-align: center; /* Center the title */
+  margin-bottom: 5px; /* Space below the title */
 }
+
+.results-carousel img {
+  width: 100%; /* Make image responsive */
+  display: block; /* Remove extra space below image */
+  margin: 0 auto; /* Center image */
+}
+
+/* Reset any specific item styles if needed */
 
 
 .interpolation-panel {
@@ -155,3 +166,37 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+table {
+  width: 50%; /* Set table width to 50% */
+  margin-left: auto; /* These two lines center the table */
+  margin-right: auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr.highlight td {
+  font-weight: bold;
+  color: black;
+}
+
+.green-text {
+  color: green; /* This will style the percentage text in green */
+  font-size: 0.8em;
+}
+
+.gray-text {
+  color: gray; /* This will style the percentage text in green */
+  font-size: 0.7em;
+}
+
